@@ -33,7 +33,6 @@ let user = {
         }
     ],
     favoriteFruit: 'strawberry',
-
     // Method to return full name
     fullName: function () { 
         return `User name is: ${this.name.first} ${this.name.last}`;
@@ -55,9 +54,7 @@ let user = {
             console.log('Key is missing');  
         }
     }
-   
 }
-
 // Log the user's full name
 console.log(user.fullName());
 
@@ -68,7 +65,4 @@ user.setBalance("$2000");
 user.deleteByKey('email');
 
 // Log the updated user object
-console.log(user);
-
-
-
+console.log(user)
