@@ -1,6 +1,6 @@
 // Напишіть regex, котрий знайде cat та can, але не знайде car
 var text = 'cat car can';
-var regex = /ca[t|n]/g;
+var regex = /\bca[t|n]\b/g;
 var matches = text.match(regex);
 console.log(matches);
 
