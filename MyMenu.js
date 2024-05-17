@@ -3,7 +3,9 @@ function multiplyNumeric(obj) {
     for (let key in obj) {
         if (typeof obj[key] === 'number') {
             obj[key] *= 2;
-        }
+            } else if (typeof obj[key] === 'object') {
+            multiplyNumeric(obj[key]); // Рекурсивний виклик для вкладених об'єктів
+            }
     }
 }
 
